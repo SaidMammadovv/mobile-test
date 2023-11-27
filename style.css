@@ -15,7 +15,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .card {
@@ -23,14 +23,9 @@ body {
     opacity: 70%;
     border-radius: 1.5em;
     border: 3.5px solid gray;
-    padding: 1.2em;
+    padding: 1.7em;
     width: 100%;
-    max-width: 50em;
-    transition: .9s;
-    -webkit-transition: .9s;
-    -moz-transition: .9s;
-    -ms-transition: .9s;
-    -o-transition: .9s;
+    max-width: 40em;
 }
 
 .card h3 {
@@ -51,7 +46,11 @@ body {
     line-height: 1.5;
 }
 
-
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 @media (max-width: 992px) {
     .grid-container {
@@ -63,15 +62,19 @@ body {
     .grid-container {
         grid-template-columns: 1fr;
     }
-
 }
 
-@media (max-width: 1200px) {
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr);
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%;
     }
 }
 
-.card:hover {
-    border-color: #000;
+@media screen and (min-width:561px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
