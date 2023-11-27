@@ -26,7 +26,6 @@ body {
     padding: 1.2em;
     width: 100%;
     max-width: 40em;
-    min-width: 314px;
     transition: .9s;
     -webkit-transition: .9s;
     -moz-transition: .9s;
