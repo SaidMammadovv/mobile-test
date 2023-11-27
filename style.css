@@ -78,3 +78,15 @@ body {
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 428px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
